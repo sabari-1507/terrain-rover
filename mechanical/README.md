@@ -1,77 +1,93 @@
-Mechanical Design – Terrain Rover
+# Mechanical Design – Terrain Rover
 
-1. Overview
+## Overview
 
-This directory contains the mechanical design and CAD documentation for the Terrain Rover project. It focuses on the rover's structural layout, mobility mechanism, wheel assemblies, and integration of mechanical components.
+This directory contains the mechanical CAD design and assembly documentation for the Terrain Rover. The mechanical system includes the chassis, double-rocker mobility mechanism, wheel assemblies, and custom 3D-printed tyres.
 
-The objective is to develop a mechanically robust rover platform suitable for navigating uneven terrain.
+## Mechanical Design
 
-2. Mechanical Subsystems
+### 1. Rover Chassis
+The rover structure incorporates acrylic sheets, sheet metal components, and stainless-steel (SS) tubes for structural support, mounting, and mechanical integration.
 
-2.1 Chassis Design
+### 2. Double-Rocker Mechanism
+A double-rocker mechanism is used in the rover's mobility system to support wheel articulation over uneven terrain.
 
-The chassis serves as the main structural platform for mounting the rover's mechanical, electrical, and control components.
+### 3. Custom 3D-Printed Tyres
+The tyres use a dual-material construction:
 
-2.2 Double-Rocker Mechanism
+- **Outer tyre:** TPU 95A for a flexible, durable tyre surface.
+- **Inner rim:** PETG for the rigid supporting structure.
 
-The rover incorporates a double-rocker mechanism designed to improve wheel contact and mobility over uneven surfaces.
+This configuration combines the flexibility of TPU with the structural rigidity of PETG.
 
-2.3 Wheel Assembly
+## CAD Visualisation
 
-The wheel assemblies provide ground contact and support rover movement across different terrain conditions.
+### Rover Assembly
 
-2.4 Custom Tyre Design
+**Isometric View**
 
-The project includes a custom-designed tyre intended for 3D printing. Its geometry and tread features are developed to suit the rover's mobility requirements.
+![Rover Isometric View](images/Rover_iso.png)
 
-Note: Detailed tyre CAD files, dimensions, and design images should remain private until the college IPR Cell confirms that disclosure is appropriate.
+**Front View**
 
-3. CAD Design and Modelling
+![Rover Front View](images/Rover_front.png)
 
-This section documents the rover's mechanical components and assemblies through CAD models, engineering drawings, and selected visualisations.
+**Rear View**
 
-Planned documentation includes:
+![Rover Rear View](images/Rover_back.png)
 
-- Rover chassis and overall assembly
-- Front, rear, side, bottom, and isometric views
-- Double-rocker mechanism
-- Wheel and tyre assemblies
-- Component drawings and manufacturing files, where applicable
+**Side View**
 
-4. Software and Tools
+![Rover Side View](images/Rover_left.png)
 
-- CAD software: To be specified
-- 3D printing and slicing software: To be specified
-- Fabrication tools: To be documented where applicable
+**Bottom View**
 
-5. Design and Validation
+![Rover Bottom View](images/Rover_bottom.png)
 
-Mechanical development may include:
+### Custom Tyre Design
 
-- CAD assembly and interference checks
-- Material and manufacturing considerations
-- Structural calculations and design-factor assessment
-- Component fitment and assembly verification
-- Prototype fabrication and mobility testing
+**Isometric View**
 
-Only completed analyses and verified test results will be documented here.
+![Tyre Isometric View](images/Tyre_iso.png)
 
-6. Directory Structure
+**Front View**
 
+![Tyre Front View](images/Tyre_Front.png)
+
+**Side View**
+
+![Tyre Side View](images/Tyre_side.png)
+
+**Cross-Sectional View**
+
+![Tyre Cross-Sectional View](images/Tyre_cross_Section.png)
+
+## Materials and Manufacturing
+
+| Component | Material / Process |
+|---|---|
+| Outer tyre | TPU 95A – 3D printed |
+| Inner tyre rim | PETG – 3D printed |
+| Structural members | Stainless-steel (SS) tubes |
+| Panels and mounting components | Acrylic sheets and sheet metal |
+
+## Directory Structure
+
+```text
 mechanical/
 ├── README.md
+├── images/
+│   ├── Rover_iso.png
+│   ├── Rover_front.png
+│   ├── Rover_back.png
+│   ├── Rover_left.png
+│   ├── Rover_bottom.png
+│   ├── Tyre_iso.png
+│   ├── Tyre_Front.png
+│   ├── Tyre_side.png
+│   └── Tyre_cross_Section.png
 ├── cad/
-├── drawings/
-└── images/
+└── drawings/
+```
 
-- "cad/" – CAD parts and assembly files
-- "drawings/" – Engineering drawings and manufacturing documentation
-- "images/" – Approved CAD renders and design views
-
-7. Development Status
-
-Mechanical design and documentation will be updated as the rover progresses through CAD development, fabrication, assembly, and validation.
-
-8. Contributors
-
-Contributors and their respective mechanical design responsibilities will be documented as the project develops.
+`cad/` and `drawings/` can contain the corresponding CAD models, assemblies, and engineering drawings when available.
