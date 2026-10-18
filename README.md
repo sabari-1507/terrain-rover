@@ -1,31 +1,73 @@
-Terrain Rover
+# Terrain Rover
 
-Overview
+A mobile robotics project integrating mechanical design, electronics, embedded control, and robotics software for terrain mobility.
 
-Terrain Rover is a mobile robotics project focused on developing a rover capable of traversing challenging terrain through integrated mechanical design, electronics, embedded control, and robotics software.
+## Project Overview
 
-Project Scope
+The Terrain Rover is being developed as an integrated robotic platform, combining a mechanical chassis, double-rocker mobility mechanism, custom 3D-printed tyres, electronic hardware, and software components.
 
-- Mechanical Design: Rover chassis, wheel assembly, suspension mechanism, and CAD models.
-- Electronics: Motor drivers, power distribution, sensors, and electrical integration.
-- Firmware: Motor control and microcontroller programming.
-- ROS 2: Robot description, sensor integration, navigation, and autonomous robotics software, where implemented.
-- Simulation: Robot modelling and simulation for design verification.
-- Testing and Documentation: System integration, experiments, and engineering reports.
+This repository serves as the central documentation and development space for the rover's mechanical design, electronics, firmware, ROS 2 software, and simulation.
 
-Repository Structure
+## Mechanical Design
 
-- "mechanical/" — CAD models, drawings, and mechanical design.
-- "electronics/" — Schematics, wiring diagrams, and circuit documentation.
-- "firmware/" — Embedded code and motor-control firmware.
-- "ros2_ws/" — ROS 2 packages and robotics software.
-- "simulation/" — Robot models and simulation files.
-- "docs/" — Reports, architecture, and testing documentation.
+The mechanical subsystem focuses on the rover chassis, mobility mechanism, wheel assemblies, and structural integration.
 
-Development Status
+### Chassis and Structure
 
-This repository is being developed as the rover's mechanical, electrical, and software subsystems are integrated. Documentation will be updated as implementation progresses.
+The rover structure incorporates:
+- **Acrylic sheets** for structural panels and mounting components.
+- **Sheet metal** for mechanical panels and structural components.
+- **Stainless-steel (SS) tubes** for structural support and mechanical integration.
 
-Contributors
+### Double-Rocker Mechanism
 
-Project contributors and their responsibilities will be documented as the project develops.
+The rover uses a double-rocker mechanism as part of its mobility system, designed to support wheel articulation over uneven terrain.
+
+### Custom 3D-Printed Tyres
+
+The tyres use a dual-material construction:
+
+| Component | Material | Manufacturing |
+|---|---|---|
+| Outer tyre | TPU 95A | 3D printing |
+| Inner rim | PETG | 3D printing |
+
+The flexible TPU outer tyre and rigid PETG inner rim provide complementary material properties within the wheel assembly.
+
+### Mechanical CAD Views
+
+**Rover Assembly**
+
+![Terrain Rover Isometric View](mechanical/images/Rover_iso.png)
+
+**Custom Tyre**
+
+![Custom 3D-Printed Tyre Isometric View](mechanical/images/Tyre_iso.png)
+
+For additional rover views, tyre visualisations, and mechanical design details, see the [Mechanical Design Documentation](mechanical/README.md).
+
+## Project Structure
+
+```text
+terrain-rover/
+├── README.md
+├── mechanical/
+│   ├── README.md
+│   ├── images/
+│   ├── cad/
+│   └── drawings/
+├── electronics/
+├── ros2_ws/
+```
+
+Directories can be expanded as the corresponding subsystems are developed.
+
+## Development Areas
+
+- **Mechanical Design:** Chassis, double-rocker mechanism, wheel assemblies, and 3D-printed components.
+- **Electronics:** Electrical connections, power distribution, motor drivers, and sensors.
+- **ROS 2:** Robot software, sensor integration, and navigation, as implemented.
+
+## Current Status
+
+The repository is being developed alongside the rover's mechanical design and subsystem integration. Further implementation details, software modules, and verification results will be added as they become available.
